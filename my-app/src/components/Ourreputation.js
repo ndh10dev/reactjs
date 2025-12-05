@@ -4,6 +4,7 @@ export const data = [
   { id: 1, icon: <img src="" alt="" />, title: "OurReputation 2", content: "test 2 content" },
   { id: 2, icon: <img src="" alt="" />, title: "OurReputation 3", content: "test 3 content" },
 ];
+
 export default function OurReputation({ data }) {
   return (
     <div className="reputation-wrapper" style={{ padding: '10px'}}>
