@@ -21,7 +21,7 @@ export default function TodoList() {
                 placeholder="Nhap cong viec...">
             </input>
             <button onClick={handleAdd}>Add</button>
-            <button onClick={() => setList([])}>Reset</button>
+            <button onClick={() => setList([])}>Delete</button>
             <ul>
                 {list.map((item, index) => (
                     <li key={index}>{item}</li>
