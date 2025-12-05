@@ -9,7 +9,7 @@ export default function OurReputation({ data }) {
   return (
     <div className="reputation-wrapper" style={{ padding: '10px'}}>
       {data.map((item) => (
-        <div key={item.id} className="reputation-item">
+        <div key={item.id} className="card-our-repu">
           <div className="icon">{item.icon}</div>
           <h3>{item.title}</h3>
           <p>{item.content}</p>
