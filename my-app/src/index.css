@@ -12,6 +12,8 @@ code {
     monospace;
 }
 button{
+  background-color: salmon;
+  font-size: 12px;
   border-radius: 5px;
   padding: 2px 4px;
   text-align: center;
