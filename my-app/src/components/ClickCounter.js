@@ -1,3 +1,5 @@
+//- Tạo một component đếm số lần click của người dùng và hiển thị kết quả.
+
 import { useState } from "react";
 
 export default function ClickCounter() {

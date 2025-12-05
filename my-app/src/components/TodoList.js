@@ -1,3 +1,5 @@
+//- Tạo một component quản lý danh sách công việc và sử dụng state để quản lý danh sách này.
+
 import { useState } from "react";
 
 export default function TodoList() {
