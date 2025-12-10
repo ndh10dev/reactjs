@@ -5,6 +5,7 @@ import Form from "./components/Form";
 import OurReputation, { data } from "./components/Ourreputation";
 import ClickCounter from "./components/ClickCounter";
 import TodoList from "./components/TodoList"; 
+import UserForm from "./components/UserForm";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <OurReputation data={data} />
       <ClickCounter />
       <TodoList />
+      <UserForm />
       <Footer></Footer>
     </div>
   );

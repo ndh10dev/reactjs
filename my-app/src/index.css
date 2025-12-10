@@ -26,7 +26,7 @@ code {
 }
 button{
   background-color: salmon;
-  width: 60px;
+  width: 80px;
   height: 30px;
   font-size: 14px;
   border-radius: 5px;
@@ -48,3 +48,8 @@ input{
 ul{
   list-style-type: none;
 } 
+label{
+  font-weight: bold;
+  margin: 5px;
+  width: 100px;
+}

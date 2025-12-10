@@ -18,7 +18,7 @@ export default function TodoList() {
                 type="text" 
                 value={task}
                 onChange={(e) => setTask(e.target.value)}
-                placeholder="Nhap cong viec...">
+                placeholder="Enter Work...">
             </input>
             <button onClick={handleAdd}>Add</button>
             <button onClick={() => setList([])}>Delete</button>

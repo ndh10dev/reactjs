@@ -18,9 +18,9 @@ export default function Form() {
   };
   return (
     <div className="form-info" style={{ padding: '10px'}}>
-      <Input label="Name" type="text" value={name} onChange={(e) => setName(e.target.value)} />
-      <Input label="Phone" type="number" value={phone} onChange={(e) => setPhone(e.target.value)} />
-      <Input label="Email" type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+      <Input label="Name: " placeholder="Enter name..." type="text" value={name} onChange={(e) => setName(e.target.value)} />
+      <Input label="Phone: " placeholder="Enter phone..." type="number" value={phone} onChange={(e) => setPhone(e.target.value)} />
+      <Input label="Email: " placeholder="Enter email..." type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
       <button onClick={handleClick}>Send</button>
     </div>
   );
