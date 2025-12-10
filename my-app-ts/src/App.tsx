@@ -1,9 +1,15 @@
-import React from "react";
+interface User {
+  name: string;
+  age: number;
+}
 
-const App: React.FC = () => {
-  return(
-    <p>the Light turn On</p>
-  );
-};
+function App() {
+  const user: User = {
+    name: "Nguyen Duc Hieu",
+    age: 22
+  };
+
+  return <div>{user.name}<br></br>{user.age}</div>;
+}
 
 export default App;
