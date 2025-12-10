@@ -11,3 +11,46 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.card-our-repu{
+  border: 1px solid #00000033;
+  border-radius: 10px;
+  gap: 30px;
+  margin: 10px;
+  padding: 10px;
+  width: 200px;
+  box-shadow: 2px 2px 5px #00000022;
+}
+.card-our-repu:hover{
+  box-shadow: 4px 4px 10px #00000044;
+  transform: translateY(-2px);
+}
+button{
+  background-color: rgb(130, 114, 250);
+  width: 80px;
+  height: 30px;
+  font-size: 14px;
+  border-radius: 5px;
+  margin: 5px;
+  text-align: center;
+  cursor: pointer;
+  margin: 5px;
+}
+button:hover{
+  background-color: rgb(103, 92, 205);
+  transform: translateY(-2px);
+}
+input{
+  height: 25px;
+  border-radius: 5px;
+  border:2px solid #000000ff;
+  margin:5px;
+}
+ul{
+  list-style-type: none;
+} 
+label{
+  font-weight: bold;
+  margin: 5px;
+  width: 100px;
+}

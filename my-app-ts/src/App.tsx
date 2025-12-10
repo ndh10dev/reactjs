@@ -1,15 +1,33 @@
-interface User {
-  name: string;
-  age: number;
-}
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Banner from "./components/Banner";
+import Form from "./components/Form";
+import OurReputation, { data } from "./components/Ourreputation";
+import ClickCounter from "./components/ClickCounter";
+import TodoList from "./components/TodoList";
+import UserForm from "./components/UserForm";
 
 function App() {
-  const user: User = {
-    name: "Nguyen Duc Hieu",
-    age: 22
-  };
+  return (
+    <div className="App">
+      <Header />
 
-  return <div>{user.name}<br></br>{user.age}</div>;
+      <Banner id="1" title="Nguyen Hieu" description="Banner 1" />
+      <Banner id="2" title="Test components" description="Banner 222" />
+
+      <Form />
+
+      <OurReputation data={data} />
+
+      <ClickCounter />
+
+      <TodoList />
+
+      <UserForm />
+
+      <Footer />
+    </div>
+  );
 }
 
 export default App;
