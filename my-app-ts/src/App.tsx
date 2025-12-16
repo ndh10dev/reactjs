@@ -19,7 +19,7 @@ function App() {
           element={
             <>
               <h1>Home</h1>
-              <Banner id="👨‍💻" title="Nguyen Duc Hieu" description="Frontend Developer | React & TypeScript" />
+              <Banner id="🧑🏻‍💻" title="Nguyen Duc Hieu" description="Frontend Developer | React & TypeScript" />
               <Banner id="💻" title="Website Features" description="Routing, Form Handling, Reusable Components, State Management" />
               <ClickCounter />
               <UserForm />
