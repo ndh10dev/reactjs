@@ -19,8 +19,8 @@ function App() {
           element={
             <>
               <h1>🏠 Trang Chủ</h1>
-              <Banner id="1" title="Nguyen Hieu" description="Banner 1" />
-              <Banner id="2" title="Test components" description="Banner 222" />
+              <Banner id="👨‍💻" title="Nguyen Duc Hieu" description="Frontend Developer | React & TypeScript" />
+              <Banner id="💻" title="Website Features" description="Routing, Form Handling, Reusable Components, State Management" />
               <ClickCounter />
               <UserForm />
             </>
