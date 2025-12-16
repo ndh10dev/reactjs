@@ -18,7 +18,7 @@ function App() {
           path="/"
           element={
             <>
-              <h1>🏠 Trang Chủ</h1>
+              <h1>Home</h1>
               <Banner id="👨‍💻" title="Nguyen Duc Hieu" description="Frontend Developer | React & TypeScript" />
               <Banner id="💻" title="Website Features" description="Routing, Form Handling, Reusable Components, State Management" />
               <ClickCounter />
@@ -29,7 +29,7 @@ function App() {
           path="/about" 
           element={
             <>
-              <h1>ℹ️ Giới Thiệu</h1>
+              <h1>About</h1>
               <OurReputation data={data} />
               <TodoList />
             </>
@@ -37,10 +37,10 @@ function App() {
         <Route 
           path="/contact" 
           element={
-          <>
-          <h1>📞 Liên Hệ</h1>
-          <Form />
-          </>
+            <>
+              <h1>Contact</h1>
+              <Form />
+            </>
           } />
       </Routes>
 

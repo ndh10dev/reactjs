@@ -8,9 +8,12 @@ export interface ReputationItem {
 }
 
 export const data: ReputationItem[] = [
-  { id: 0, icon: <img src="" alt="" />, title: "OurReputation 1", content: "test 1 content" },
-  { id: 1, icon: <img src="" alt="" />, title: "OurReputation 2", content: "test 2 content" },
-  { id: 2, icon: <img src="" alt="" />, title: "OurReputation 3", content: "test 3 content" },
+  { id: 0, icon: <img src="" alt="" />, title: "High Quality Code", 
+    content: "We write clean, maintainable, and scalable code following best practices and industry standards." },
+  { id: 1, icon: <img src="" alt="" />, title: "On-Time Delivery", 
+    content: "We respect deadlines and ensure your project is delivered on time without compromising quality." },
+  { id: 2, icon: <img src="" alt="" />, title: "Modern Technologies", 
+    content: "We use the latest technologies like React, TypeScript, and modern UI frameworks." },
 ];
 
 interface OurReputationProps {
@@ -19,7 +22,7 @@ interface OurReputationProps {
 
 export default function OurReputation({ data }: OurReputationProps) {
   return (
-    <div className="reputation-wrapper" style={{ padding: "10px" }}>
+    <div className="reputation-wrapper">
       {data.map((item) => (
         <div key={item.id} className="card-our-repu">
           <div className="icon">{item.icon}</div>

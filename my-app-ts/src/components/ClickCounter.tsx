@@ -8,7 +8,7 @@ export default function ClickCounter() {
   return (
     <div style={{ margin: "20px", padding: "10px" }}>
       <h2>ClickCounter</h2>
-      <p>Số lần Click: {count} lần</p>
+      <p>Number of Clicks: {count} times</p>
 
       <button onClick={() => setCount(count + 1)}>Click</button>
       <button onClick={() => setCount(0)}>Reset</button>

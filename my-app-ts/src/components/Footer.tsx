@@ -1,8 +1,8 @@
 
 function Footer() {
   return (
-    <footer style={{backgroundColor: '#ff9999ff', padding: '10px', marginTop: '20px'}}>
-      <p>Footer Website Hieu</p>
+    <footer style={{backgroundColor: '#336600', padding: '10px', marginTop: '20px', color: 'white', textAlign: 'center'}}>
+      <p>© 2025 Nguyen Duc Hieu. All rights reserved.</p>
     </footer>
   );
 }
