@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Header() {
   return (
@@ -6,9 +6,15 @@ function Header() {
       <h2>🌐 HioDev</h2>
 
       <nav className="nav">
-        <Link to="/" className="nav-link">Home</Link>
-        <Link to="/about" className="nav-link">About</Link>
-        <Link to="/contact" className="nav-link">Contact</Link>
+        <NavLink to="/" className={({ isActive }) =>
+            isActive ?"nav-link active" :"nav-link"
+          }>Home</NavLink>
+        <NavLink to="/about" className={({ isActive }) =>
+            isActive ?"nav-link active" :"nav-link"
+          }>About</NavLink>
+        <NavLink to="/contact" className={({ isActive }) =>
+            isActive ?"nav-link active" :"nav-link"
+          }>Contact</NavLink>
       </nav>
     </header>
   );

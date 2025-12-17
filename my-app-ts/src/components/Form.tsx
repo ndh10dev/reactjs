@@ -3,63 +3,88 @@ import { useState } from "react";
 interface InputProps {
   label: string;
   type: string;
-  value: string | number;
+  value: string;
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
   placeholder?: string;
 }
 
-function Input({ label, type, value, onChange, placeholder }: InputProps) {
+function Input({
+  label,
+  type,
+  value,
+  onChange,
+  placeholder,
+}: InputProps) {
   return (
-    <div className="input-group" style={{ marginBottom: "10px" }}>
-      <label style={{ paddingRight: "10px" }}>{label}</label>
-
+    <div className="input-group" style={{ marginBottom: "12px" }}>
+      <label style={{ display: "block", marginBottom: "4px" }}>
+        {label}
+      </label>
       <input
         type={type}
         value={value}
         placeholder={placeholder}
         onChange={onChange}
-        style={{ padding: "5px" }}
+        style={{ padding: "6px", width: "100%" }}
       />
     </div>
   );
 }
 
-export default function Form() {
+export default function ContactForm() {
   const [name, setName] = useState("");
-  const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
 
-  const handleClick = () => {
-    alert("Form submitted!");
+  const handleSubmit = () => {
+    alert("Message sent successfully!");
   };
 
   return (
-    <div className="form-info" style={{ padding: "10px" }}>
+    <div
+      className="form-info"
+      style={{ maxWidth: "400px", padding: "10px" }}
+    >
       <Input
-        label="Name:"
+        label="Name"
         type="text"
-        placeholder="Enter name..."
+        placeholder="Enter your name"
         value={name}
         onChange={(e) => setName(e.target.value)}
       />
 
       <Input
-        label="Phone:"
-        type="number"
-        placeholder="Enter phone..."
-        value={phone}
-        onChange={(e) => setPhone(e.target.value)}
-      />
-
-      <Input
-        label="Email:"
+        label="Email"
         type="email"
-        placeholder="Enter email..."
+        placeholder="Enter your email"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
       />
 
-      <button onClick={handleClick}>Send</button>
+      <Input
+        label="Subject"
+        type="text"
+        placeholder="Enter subject"
+        value={subject}
+        onChange={(e) => setSubject(e.target.value)}
+      />
+
+      <div className="input-group" style={{ marginBottom: "12px" }}>
+        <label style={{ display: "block", marginBottom: "4px" }}>
+          Message
+        </label>
+        <textarea
+          placeholder="Write your message..."
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
+          style={{ padding: "6px", width: "100%", height: "100px" }}
+        />
+      </div>
+
+      <button onClick={handleSubmit}>
+        Send
+      </button>
     </div>
   );
 }
