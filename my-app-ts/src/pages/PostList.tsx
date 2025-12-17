@@ -14,12 +14,10 @@ export default function PostList() {
       <ul className="blog-list">
         {posts.map((post) => (
           <li key={post.id} className="blog-item">
-            <Link to={`/posts/${post.id}`} className="blog-link">
-              {post.title}
-            </Link>
+            <Link to={`/posts/${post.id}`} className="blog-link">{post.title}</Link>
           </li>
         ))}
       </ul>
     </div>
   );
-}
+}   

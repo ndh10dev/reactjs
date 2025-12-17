@@ -8,7 +8,14 @@ import ClickCounter from "./components/ClickCounter";
 import TodoList from "./components/TodoList";
 import UserForm from "./components/UserForm";
 import PostList from "./pages/PostList";
-import PostDetail from "./pages/PostDetail";
+import PostDetail from "./pages/PostDetail";  
+import ProfileLayout from "./pages/ProfileLayout";
+import ProfileInfo from "./pages/ProfileInfo";
+import ChangePassword from "./pages/ChangePassword";
+import ProtectedRoute from "./components/ProtectedRoute";
+import Login from "./pages/Login";
+
+const isAuthenticated = true; // Giả sử trạng thái đăng nhập
 
 function App() {
   return (
@@ -63,6 +70,19 @@ function App() {
           </>
         }
       />
+      <Route path="/login" element={<Login />} />
+      <Route
+        path="/profile/*"
+        element={
+          <ProtectedRoute isAuthenticated={isAuthenticated}>
+            <ProfileLayout />
+          </ProtectedRoute>
+        }
+      >
+        <Route index element={<ProfileInfo />} />
+        <Route path="change-password" element={<ChangePassword />} />
+      </Route>
+
     </Routes>
   </main>
 
