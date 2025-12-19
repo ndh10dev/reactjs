@@ -1,10 +1,10 @@
 export default function ChangePassword() {
   return (
-    <div style={{ margin: "20px" }}>
-      <h2>Thay đổi mật khẩu</h2>
-      <input type="password" placeholder="Mật khẩu mới" />
+    <div className="changepassform" style={{ margin: "20px" }}>
+      <h2>Change Password</h2>
+      <input type="password" placeholder="New Password" />
       <br />
-      <button>New</button>
+      <button>Change</button>
     </div>
   );
 }

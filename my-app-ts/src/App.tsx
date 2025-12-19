@@ -14,6 +14,7 @@ import ProfileInfo from "./pages/ProfileInfo";
 import ChangePassword from "./pages/ChangePassword";
 import ProtectedRoute from "./components/ProtectedRoute";
 import Login from "./pages/Login";
+import Register from "./pages/Register";
 
 const isAuthenticated = true; // Giả sử trạng thái đăng nhập
 
@@ -71,6 +72,7 @@ function App() {
         }
       />
       <Route path="/login" element={<Login />} />
+      <Route path="/register" element={<Register />} />
       <Route
         path="/profile/*"
         element={
