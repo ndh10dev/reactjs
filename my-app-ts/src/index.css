@@ -93,6 +93,9 @@ header {
   margin-top: 20px;
   font-weight: 600;
 }
+.hightlight{
+  color: red;
+}
 .page input{
   input[type=text], input[type=password] {
   width: 100%;
