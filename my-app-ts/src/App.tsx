@@ -16,8 +16,7 @@ import ProtectedRoute from "./components/ProtectedRoute";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 
-const isAuthenticated = true; // Giả sử trạng thái đăng nhập
-
+const isAuthenticated = true;
 function App() {
   return (
     <div className="App">
@@ -30,7 +29,6 @@ function App() {
         element={
           <>
             <h1>Home</h1>
-
             <Banner
               id="🧑🏻‍💻"
               title="Nguyen Duc Hieu"
@@ -41,16 +39,13 @@ function App() {
               title="Website Features"
               description="Routing, Form Handling, Reusable Components, State Management"
             />
-
             <ClickCounter />
             <UserForm />
             <PostList />
           </>
         }
       />
-
       <Route path="/posts/:postId" element={<PostDetail />} />
-
       <Route
         path="/about"
         element={
@@ -61,7 +56,6 @@ function App() {
           </>
         }
       />
-
       <Route
         path="/contact"
         element={
@@ -92,5 +86,4 @@ function App() {
 </div>
   );
 }
-
 export default App;
